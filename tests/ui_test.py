@@ -29,11 +29,11 @@ def cv_pom_driver(testui_driver):
 
 
 class TestSuite:
-    # def test_for_chililabs(self, testui_driver: TestUIDriver, cv_pom_driver: CVPOMDriver):
-    #     landing_page = LandingPage(testui_driver, cv_pom_driver)
-    #     testui_driver.navigate_to("https://chililabs.io")
-    #     testui_driver.get_driver().set_window_size(1200, 700)
-    #     landing_page.accept_cookies().go_to_contact_us().fill_all_form_details()
+    def test_for_chililabs(self, testui_driver: TestUIDriver, cv_pom_driver: CVPOMDriver):
+        landing_page = LandingPage(testui_driver, cv_pom_driver)
+        testui_driver.navigate_to("https://chililabs.io")
+        testui_driver.get_driver().set_window_size(1200, 700)
+        landing_page.accept_cookies().go_to_contact_us().fill_all_form_details()
 
 
     def test_for_chililabs_cv(self, testui_driver: TestUIDriver, cv_pom_driver: CVPOMDriver):
