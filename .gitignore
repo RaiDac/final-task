@@ -5,3 +5,4 @@ logs/
 yolov8n.pt
 data/
 runs/
+.idea
