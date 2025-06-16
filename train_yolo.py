@@ -4,7 +4,7 @@ from ultralytics import YOLO
 # Build the absolute path programmatically, relative to this script.
 # This will work on both MacOS and Windows.
 BASE_DIR = Path(__file__).resolve().parent
-data_path = BASE_DIR / "data" / "example.yaml"  # adjust the relative path as needed
+data_path = BASE_DIR / "data" / "cv_example.yaml"  # adjust the relative path as needed
 
 # Load a model
 model = YOLO("yolov8n.yaml").load("yolov8n.pt")
